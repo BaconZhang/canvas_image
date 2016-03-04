@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Canvas-Image</title>
+	<link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/bootstrap/3.0.3/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+	<div class="page-header" id="title">
+		<h1>
+			在线图像处理系统
+		</h1>
+	</div>
+	<div class="container">
+		<div class="row">
+			<canvas id="canvasa" class="col-xs-6">
+        	</canvas>
+
+        	<canvas id="canvasb" class="col-xs-6">
+        	</canvas>
+		</div>
+		<div class="row" id="button-group">
+			<a href="javascript:greyEffect()" class="btn btn-info col-md-2">Grey Effect</a>
+			<a href="javascript:blackEffect()" class="btn btn-info col-md-2">Black White Effect</a>
+			<a href="javascript:blueEffect()" class="btn btn-info col-md-2">Blue Effect</a>
+			<a href="javascript:reverseEffect()" class="btn btn-info col-md-2">Reverse Effect</a>
+			<a href="javascript:blurEffect()" class="btn btn-info col-md-2">Blur Effect</a>
+			<a href="javascript:mosaicEffect()" class="btn btn-info col-md-2">Mosaic Effect</a>
+		</div>
+		<div class="row">
+			<form action="/image_upload" method="post" enctype="multipart/form-data" role="form">
+				<div>
+					<input type="file" name="image" id="imageupload" class="btn btn-danger col-md-3 col-md-offset-2">
+					<input type="submit" value="上传文件" class="btn btn-danger col-md-3 col-md-offset-2">
+				</div>
+			</form>
+		</div>
+		<div id="path" style="display: none"><%= path %></div>
+    </div>
+
+    <script type="text/javascript" src="javascript/image.js"></script>
+</body>
+</html>

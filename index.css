@@ -1,0 +1,19 @@
+#title h1 {
+	font-family: 微软雅黑;
+	font-weight: bold;
+	text-align: center;
+	margin: 0 auto;
+}
+#canvasa {
+	display:block;
+	float:left;
+	border:1px solid #aaa;
+}
+#canvasb {
+	display:block;
+	float:left;
+	border:1px solid #aaa;
+}
+#button-group {
+	margin: 5px auto;
+}
